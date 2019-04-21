@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/item_show_location"
+          android:title="@string/showlocation"/>
+    <item android:id="@+id/item_show_streetview_pano"
+          android:title="@string/streetview"/>
+</menu>

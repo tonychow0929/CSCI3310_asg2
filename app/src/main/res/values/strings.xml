@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">CU Sweetspot</string>
+    <string name="title_activity_maps">CU Sweetspot</string>
+    <string name="empty">empty</string>
+    <string name="showlocation">Show Location on Map</string>
+    <string name="streetview">Show StreetView Panorama</string>
+    <string name="currentview">Current View:</string>
+    <string name="mapoption">Map</string>
+    <string name="panooption">StreetView Panorama</string>
+    <string name="google_maps_key">AIzaSyCX3byrJm45-C6IIFfjL-la49OmJRklTFM</string>
+</resources>

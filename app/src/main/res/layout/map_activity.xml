@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_height="wrap_content" app:layout_constraintBottom_toTopOf="@id/fragment_container"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_width="match_parent" android:id="@+id/radioBar">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/currentview"
+                android:id="@+id/currentView" android:layout_weight="0" android:editable="false" android:padding="0dp"
+                android:gravity="center" android:background="@color/colorPrimary"/>
+        <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/radioGroup"
+                android:orientation="horizontal" android:background="@color/colorPrimary">
+            <RadioButton
+                    android:text="@string/mapoption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/locationOption" android:layout_weight="1"
+                    android:buttonTint="@color/colorAccent"/>
+            <RadioButton
+                    android:text="@string/panooption"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:id="@+id/panoOption" android:layout_weight="1"
+                    android:buttonTint="@color/colorAccent"/>
+        </RadioGroup>
+    </LinearLayout>
+
+    <FrameLayout android:id="@+id/fragment_container" app:layout_constraintBottom_toBottomOf="parent"
+                 app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent"
+                 android:layout_width="match_parent"
+                 android:layout_height="0dp" android:layout_weight="0"
+                 app:layout_constraintTop_toBottomOf="@id/radioBar"/>
+
+</android.support.constraint.ConstraintLayout>
